@@ -1,0 +1,115 @@
+body {
+  font-family: Arial;
+  text-align: center;
+  background: black;
+  color: white;
+}
+
+h1 {
+  background: #222;
+  color: white;
+  padding: 10px;
+}
+
+input {
+  padding: 8px;
+  margin: 5px;
+  background: #1e1e1e;
+  color: white;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+}
+#shuffleBtn {
+  background: rgb(101, 0, 105);
+  color: white;
+  border: none;
+}
+#studyImage {
+  position: absolute;
+  right: 20px;
+  top: 120px;
+
+  width: 350px;   /* adjust size */
+  height: auto;   /* keeps proportions */
+}
+/* ---------------- LEVEL BUTTONS ---------------- */
+
+.redBtn {
+  background: red;
+  color: white;
+  border: none;
+}
+
+.yellowBtn {
+  background: gold;
+  color: black;
+  border: none;
+}
+
+.greenBtn {
+  background: green;
+  color: white;
+  border: none;
+}
+
+/* ---------------- CARD LEVEL COLORS ---------------- */
+
+.red {
+  color: red;
+  font-weight: bold;
+}
+
+.yellow {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+.green {
+  color: green;
+  font-weight: bold;
+}
+#cardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.card {
+  position: relative;
+  width: 400px;
+  min-height: 180px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.card-actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 6px;
+}
+
+.card-actions button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: rgba(0,0,0,0.05);
+}

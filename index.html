@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flash Card App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Study Card</h1>
+
+<!-- HOME PAGE -->
+<div id="homePage">
+  <h2>Your Sets</h2>
+
+  <input id="setName" placeholder="New set name">
+  <button onclick="createSet()">Create Set</button>
+
+  <div id="setList"></div>
+</div>
+
+<!-- STUDY PAGE -->
+<div id="studyPage" style="display:none;">
+
+  <h2 id="currentSetTitle"></h2>
+
+<div id="cardContainer"></div>
+  <p id="cardCount"></p>
+
+  <button onclick="prevCard()">Previous</button>
+  <button onclick="nextCard()">Next</button>
+  <button id="shuffleBtn" onclick="toggleShuffle()">
+  Shuffle: OFF
+</button>
+  <button onclick="backHome()">Back</button>
+  <img 
+    id="studyImage"
+    src="images/study.png"
+    alt="Study Image"
+  >
+  <hr>
+
+  <!-- ADD CARD -->
+  <input id="question" placeholder="Question">
+  <input id="answer" placeholder="Answer">
+  <button onclick="addCard()">Add Card</button>
+
+  <hr>
+
+  <!-- CSV IMPORT (ONLY HERE) -->
+  <input type="file" id="csvFile" accept=".csv">
+  <button onclick="importCSV()">Import CSV into this set</button>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
